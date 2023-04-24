@@ -10,6 +10,11 @@ body{font-size: 14px; font-family: 'Noto Sans KR','Noto Sans', sans-serif; color
 a{color: #000;text-decoration: none;}
 
 @media screen and (max-width:768px){
+  #container{position: relative; top: 119px;}
+  .path{display: none;}
+  .spot{position: relative; margin: 0 auto; width: 92vw; height: 300px; margin-bottom: 25px;}
+  .spot h2{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; font-size: 30px; text-align: center; font-weight: bold;}
+
   .spot .snb1box{position: absolute; right: 0; bottom: 0; width: 150px; border: 1px solid #ddd; padding-left: 20px; box-sizing: border-box; border-radius: 10px;}
   .spot .snb1box>a{display: inline-block; width: 100%; line-height: 40px; font-size: 11px; background: url(../img/download.png) no-repeat 85% 50%;}
   
@@ -59,6 +64,11 @@ a{color: #000;text-decoration: none;}
   #content>ul>li:last-of-type{margin-right: 0; background: url(../img/linkbtm_04.png) no-repeat 90% 50%;}
 }
 @media screen and (min-width:769px) and (max-width:1024px){
+  #container{position: relative; top: 119px;}
+  .path{display: none;}
+  .spot{position: relative; margin: 0 auto; width: 92vw; height: 300px; margin-bottom: 25px;}
+  .spot h2{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; font-size: 30px; text-align: center; font-weight: bold;}
+  
   .spot .snb1box{position: absolute; right: 0; bottom: 0; width: 150px; border: 1px solid #ddd; padding-left: 20px; box-sizing: border-box; border-radius: 10px;}
   .spot .snb1box>a{display: inline-block; width: 100%; line-height: 40px; font-size: 11px; background: url(../img/download.png) no-repeat 85% 50%;}
   
@@ -112,6 +122,10 @@ a{color: #000;text-decoration: none;}
 
 @media screen and (min-width:1024px) and (max-width:1500px){  
   /* container */
+  #container{position: relative; top: 161px;}
+  .path{position: absolute; left:4vw; top: 0; font-size: 10px;}
+  .spot{position: relative; margin: 0 auto; width: 80%; height: 340px; margin-bottom: 30px;}
+
   /* spot */
   .spot h2{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; font-size: 40px; text-align: center; font-weight: bold;}
   .spot .snb1box{position: absolute; right: 0; bottom: 0; width: 160px; border: 1px solid #ddd; padding-left: 20px; box-sizing: border-box; border-radius: 10px;}
@@ -167,6 +181,9 @@ a{color: #000;text-decoration: none;}
 
 @media screen and (min-width:1501px){
   /* container */
+  #container{position: relative; top: 161px;}
+  .path{position: absolute; left:4vw; top: 0; font-size: 0.6vw;}
+  .spot{position: relative; margin: 0 auto; width: 1280px; height: 340px; margin-bottom: 30px;}
   /* spot */
   .spot h2{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; font-size: 3vw; text-align: center; font-weight: bold;}
   .spot .snb1box{position: absolute; right: 0; bottom: 0; width: 180px; height: 2.5vw; border: 1px solid #ddd; padding: 0 20px; box-sizing: border-box; border-radius: 10px;}
