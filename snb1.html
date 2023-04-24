@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IR | 공시정보</title>
+  <meta name="description" content="삼성물산:포토폴리오 페이지">
+  <meta name="keywords" content="포토폴리오">
+  <meta name="author" content="장새린">
+  <link rel="stylesheet" href="css/import.css">
+  <link rel="stylesheet" href="css/snb1.css">
+  <script src="https://kit.fontawesome.com/7de44a4d82.js" crossorigin="anonymous"></script>
+  <script defer src="js/common.js"></script>
+</head>
+<body>
+  <!-- 본문 바로가기 -->
+  <div id="skipnavi"><a href="#container">본문바로가기</a></div>
+  <!-- //본문 바로가기 -->
+
+  <!-- wrap -->
+  <div id="wrap">
+    <!-- header -->
+    <div id="header"></div>
+    <!-- //header -->
+    <hr />
+    <!-- container -->
+    <div id="container">
+      <p class="path">홈&nbsp; &gt; &nbsp;  IR &nbsp; &gt; &nbsp; 
+        고객문의 &nbsp; &gt; &nbsp; 공시정보</p>
+      <div class="spot">
+        <h2>공시정보</h2>
+        <p class="snb1box"><a href="#">공시정보 관리지침</a></p>
+      </div>
+      <div id="content">
+        <div class="table_wrap">
+          <table>
+            <caption class="blind">공시정보 보고서</caption>
+            <thead>
+              <tr>
+                <th scope="row">번호</th>
+                <th scope="row">보고서명</th>
+                <th scope="row">제출인</th>
+                <th scope="row">일자</th>
+              </tr>
+            </thead>
+            <!-- tfoot -->
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>단일판매·공급계약체결단일판매·공급계약체결단일판매</td>
+                <td>삼성물산</td>
+                <td>2023.02.28</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>단일판매·공급계약체결</td>
+                <td>삼성물산</td>
+                <td>2023.02.28</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>단일판매·공급계약체결</td>
+                <td>삼성물산</td>
+                <td>2023.02.28</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>단일판매·공급계약체결</td>
+                <td>삼성물산</td>
+                <td>2023.02.28</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>단일판매·공급계약체결</td>
+                <td>삼성물산</td>
+                <td>2023.02.28</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>단일판매·공급계약체결</td>
+                <td>삼성물산</td>
+                <td>2023.02.28</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>단일판매·공급계약체결</td>
+                <td>삼성물산</td>
+                <td>2023.02.28</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>단일판매·공급계약체결</td>
+                <td>삼성물산</td>
+                <td>2023.02.28</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>단일판매·공급계약체결</td>
+                <td>삼성물산</td>
+                <td>2023.02.28</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>단일판매·공급계약체결</td>
+                <td>삼성물산</td>
+                <td>2023.02.28</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table_page">
+          <div class="prev">
+            <a href="#" class="btn_firstpage"></a>
+            <a href="#" class="btn_prevpage"></a>
+          </div>
+          <ul class="page_num">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+          </ul>
+          <div class="next">
+            <a href="#" class="btn_nextpage"></a>
+            <a href="#" class="btn_lastpage"></a>
+          </div>
+        </div>
+
+        <ul>
+          <li><a href="#">삼성물산 소개<i class="fa-solid fa-chevron-right"></i></a></li>
+          <li><a href="#">사업분야<i class="fa-solid fa-chevron-right"></i></a></li>
+          <li><a href="#">ESG<i class="fa-solid fa-chevron-right"></i></a></li>
+          <li><a href="#">뉴스룸<i class="fa-solid fa-chevron-right"></i></a></li>
+        </ul>
+      </div>
+      <!-- content -->
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <div id="footer"></div>
+    <!-- //footer -->
+  </div>
+  <!-- //wrap -->
+  <script>
+    async function fetchHtmlAsText(url){
+      const response = await fetch(url);
+      return await response.text();
+    }
+    async function importPage(target){
+      document.querySelector("#" + target).innerHTML = await fetchHtmlAsText(target + ".html")
+    }
+    importPage('header');
+    importPage('footer')
+  </script>
+</body>
+</html>
