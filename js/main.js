@@ -223,35 +223,5 @@ esgPrev.addEventListener("click",e=>{
   }
 })
 
-const wrap = document.querySelector("#wrap");
-const mobList = document.querySelectorAll(".mob_gnb>ul>li");
-const mobDiv = document.querySelectorAll(".mob_gnb>ul>li>div");
-
-for(let el of mobList){
-  el.addEventListener("click",e=>{
-    e.preventDefault();
-    el.classList.toggle("on");
-  })
-}
-
-const btnMob = document.querySelector(".mob_btn");
-const mob = document.querySelector(".mob");
-
-btnMob.addEventListener("click",e=>{
-  e.preventDefault();
-  btnMob.classList.toggle("on");
-  mob.classList.toggle("on");
-
-  if(mob.classList.contains("on")){
-  wrap.style.overflow = "hidden"
-  wrap.style.height = "100vh"
-  }
-  else{
-    wrap.style.overflow = "visible"
-    wrap.style.height = "auto"
-  }
-  })
-
-
 
 })

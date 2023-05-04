@@ -5,7 +5,6 @@ const li = document.querySelectorAll("#content>.inpuire1>ul>li");
 const inpuire2 = document.querySelector("#content>.inpuire2");
 const inpuire3 = document.querySelector("#content>.inpuire3");
 const inpuire2LI = document.querySelectorAll("#content>.inpuire2>ul>li");
-console.log(li);
 
 for(let el of li){
   el.addEventListener("click",e=>{
